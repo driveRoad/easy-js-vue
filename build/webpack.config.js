@@ -7,23 +7,25 @@ const plugins = require('./plugin');
 const webpacBaseConfig = {
     mode: 'development',
     entry: {
-        app: resolve('src/index.js'),
+        app: resolve('src/index.vue'),
     },
     output: {
         filename: '[name].js',
         path: resolve('dist'),
+        
     },
-    plugins: [...plugins],
+   
     module: {
         rules: [
             ...jsRules, ...styleRules
         ]
     },
+    plugins: [...plugins],
     resolve: {
-        extensions: ['.js','.jsx'],
+        extensions: ['.js','.jsx', '.vue'],
         alias: {
             "@components": resolve('src/components'),
-            "vue$": "vue/dist/vue.esm.js"
+            "vue$": "vue/dist/vue.js"
             
         }
     }

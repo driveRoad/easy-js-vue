@@ -8,6 +8,7 @@
 </head>
 <body>
     <div id="app">
+            <demo></demo>
         {{msg}}
         <button-counter></button-counter>
         <blog-post
@@ -15,7 +16,8 @@
             v-bind:key="post.id"
             v-bind:title="post.title"
         ></blog-post>
-        <demo></demo>
+      
+        <anchored-heading :level="1"> this is anchored-heading </anchored-heading>
     </div>
 </body>
 </html>

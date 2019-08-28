@@ -26,5 +26,9 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "element-ui": "^2.0.3",
+    "throttle-debounce": "^2.1.0"
   }
 }

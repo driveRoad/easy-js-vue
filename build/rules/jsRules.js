@@ -1,15 +1,13 @@
 const { resolve } = require('../util');
 module.exports = [
     {
-        test: '/\.vue$/',
-        use: [
-            {
-                loader: 'vue-loader'
-            }
-        ]
+        test: /\.vue$/,
+        use:{
+            loader: 'vue-loader'
+        }
     },
     {
-        test: '/\.(jpg|png|jpeg|gif|bmp)$/',
+        test: /\.(jpg|png|jpeg|gif|bmp)$/,
         use: {
             loader: 'url-loader',
             options: {
