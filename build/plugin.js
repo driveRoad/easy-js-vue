@@ -18,6 +18,6 @@ module.exports = [
 
     new MiniCssExtractPlugin({
         filename: resolve('css/[name].css')
-    })
+    }),
     
 ]
