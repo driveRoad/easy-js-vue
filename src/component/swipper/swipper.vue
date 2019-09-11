@@ -6,67 +6,48 @@
         >
         </my-tab>
 
-        <div class="kl-tab-content-swiper">
-           <swiper :options="swiperOption" ref="mySwiper">
+        <!-- <div class="kl-tab-content-swiper"> -->
+           <!-- <swiper :options="swiperOption" ref="mySwiper"> -->
                 <!-- <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
                     <div class="content">
                         I'm Slide {{ slide }}
                     </div>
                 </swiper-slide> -->
-                <swiper-slide>
+                <!-- <swiper-slide>
                     <tab-pane></tab-pane>
-                </swiper-slide>
-                <swiper-slide>
+                </swiper-slide> -->
+                <!-- <swiper-slide>
                     <tab-pane2></tab-pane2>
-                </swiper-slide>
-            </swiper>
+                </swiper-slide> -->
+            <!-- </swiper> -->
+        <!-- </div> -->
+
+        <div class="swiper-container" id="page">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slidepage" >
+                    <div class="swiper-container scroll">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slidescroll">
+                                内容一
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slidepage">
+                    <div class="swiper-container scroll">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slidescroll">
+                                内容二
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- <a-tabs>
-            <a-tab-pane tab="直播精选" key="1">
-                <swiper :options="swiperOption">
-                    <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
-                        <div class="content">
-                            I'm Slide {{ slide }}
-                        </div>
-                    </swiper-slide>
-                </swiper>
-            </a-tab-pane>
 
-            <a-tab-pane tab="直播回放" key="2" forceRender><swiper :options="swiperOption">
-            <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
-                <div class="content">
-                    I'm Slide {{ slide }}
-                </div>
-                
-            </swiper-slide>
-        </swiper></a-tab-pane>
-            <a-tab-pane tab="直播预告" key="3"><swiper :options="swiperOption">
-            <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
-                <div class="content">
-                    I'm Slide {{ slide }}
-                </div>
-                
-            </swiper-slide>
-        </swiper></a-tab-pane>
-        <a-tab-pane tab="直播回放" key="4" forceRender><swiper :options="swiperOption">
-            <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
-                <div class="content">
-                    I'm Slide {{ slide }}
-                </div>
-                
-            </swiper-slide>
-        </swiper></a-tab-pane>
-        <a-tab-pane tab="直播回放" key="5" forceRender><swiper :options="swiperOption">
-            <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
-                <div class="content">
-                    I'm Slide {{ slide }}
-                </div>
-                
-            </swiper-slide>
-        </swiper></a-tab-pane>
-        </a-tabs>
-         -->
+
+
         
     </div>
     

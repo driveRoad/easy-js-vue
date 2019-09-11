@@ -1,7 +1,7 @@
 <template>
   <div>
-      <swiper>
-      </swiper>
+      <scroll-fix>
+      </scroll-fix>
   </div>
 </template>
 <script>
@@ -18,6 +18,7 @@ import domPosition from "../util/dom-position"
 import Test from "./test"
 import vueInstance from "../util/vue-instance-methods"
 import Swiper from "./swipper/swipper"
+import scrollFix from './scrollFix'
 
 export default {
   name: "demo",
@@ -37,7 +38,8 @@ export default {
     // scrollTabFix,
     // Test,
     // vueInstance
-    Swiper
+    // Swiper
+    scrollFix
   },
   methods: {
       change: function() {
